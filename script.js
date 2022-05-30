@@ -11,9 +11,10 @@
     },
   ];
   const awesomeBook = document.getElementById('awesome-book');
-  
+
  for (let i = 0; i< books.length; i += 1) {
-   const bookContainer = Document.createElement('div')
+   const bookContainer = Document.createElement('div');
+   awesomeBook.appendChild(bookContainer);
  }
 
 Array.from(awesomeBook.children).forEach((child, index) => {
