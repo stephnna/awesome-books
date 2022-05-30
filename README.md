@@ -15,13 +15,11 @@ The goal of this project is to:
 
 ## Authors
 👤 Ezea Stephen Nnabuike
-
 - GitHub: [@stephnna](https://github.com/stephnna)
 - Twitter: [@stephnna](https://twitter.com/stephnna)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/stephen-nnabuike-ezea-143b97170/)
 
 👤 Rose
-
 - GitHub: [@Rose]()
 - Twitter: [Rose]()
 - LinkedIn: [Rose](Rose)
