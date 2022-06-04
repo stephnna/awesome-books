@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Books</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <h1>Awesome Books</h1>
   <section id='awesome-book'>
+    <h2>Book List</h2>
+    <table class="book-list">
+      <thead>
+        <tr>
+          <th>Sn</th>
+          <th>Title</th>
+          <th>author</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
   </section>
   <section >
-    <form action="">
+    <hr>
+    <h2>Add Book</h2>
+    <form id="book-form" method="post">
       <label for="title"></label>
       <input id= 'title' type="text" placeholder="title"> <br>
       <label for="author"></label> <br>
       <input id='author' type="text" placeholder="author"> <br> <br>
-      <button type="button">Add</button>
+      <button type="button" id="bttn">Add</button>
     </form>
   </section>
   <script src="./script.js"></script>

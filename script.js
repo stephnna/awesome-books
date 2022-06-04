@@ -1,28 +1,62 @@
- const books = [
-    {
-      title: 'Book1',
-      author: 'Stephen',
-      remove: 'Remove',
-    },
+let bookList = [];
+  
+const awesomeBook = document.getElementById('awesome-book');
+awesomeBook.style.display = 'none';
 
-    {
-      title: 'Book2',
-      author:'Rose',
-      remove: 'Remove',
-    },
-  ];
-  const awesomeBook = document.getElementById('awesome-book');
+function getLocalStorageData() {
+  const data = JSON.parse(localStorage.getItem('bookdata'));
+  if (data != null && data.length > 0) {
+    awesomeBook.style.display = 'block';
+    displayBooks(data);
+  }
+  else {
+    awesomeBook.style.display = 'none';
+  }
+}
 
- for (let i = 0; i < books.length; i += 1) {
-   const bookContainer = document.createElement('div');
-   awesomeBook.appendChild(bookContainer);
- }
+function displayBooks(list){
+  let tr = '';
+  let sn = 1;
+  list.forEach((item) => {
+    tr += `<tr>
+    <td>${sn}</td>
+    <td>` + item.title + `</td>
+    <td>` + item.author + `</td>
+    <td> <button type = "button" onclick="deleteBook(` + (sn - 1) +`);">Remove</button></td>
+    </tr>`;
+    sn++;
+  });
+  document.getElementById('tbody').innerHTML = tr;
+}
 
-Array.from(awesomeBook.children).forEach((child, index) => {
-  child.innerHTML = `  
-  <h4>${books[index].title}</h4>
-  <h4>${books[index].author}</h4>
-  <button type="button">${books[index].remove}</button>
-  <hr>
-  `;
-});
+function deleteBook (key) {
+  const data = JSON.parse(localStorage.getItem('bookdata'));
+  if (data != null && data.length > 0) {
+    const item = data[key];
+    let newData = data.filter( (ele) => {
+      return ele != item;
+    });
+    localStorage.setItem('bookdata', JSON.stringify(newData));
+    getLocalStorageData();
+  }
+}
+  
+bttn.onclick = function () {
+const title = document.getElementById('title');
+const author = document.getElementById('author');
+const data = JSON.parse(localStorage.getItem('bookdata'));
+if (data != null && data.length > 0) {
+  bookList = data;
+}
+const data2 = {
+  title: title.value,
+  author: author.value,
+};
+bookList.push(data2);
+localStorage.setItem('bookdata', JSON.stringify(bookList));
+document.getElementById('book-form').submit();
+};
+
+if (localStorage.getItem('bookdata') != null) {
+  getLocalStorageData();
+}
