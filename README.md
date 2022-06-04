@@ -1,35 +1,60 @@
-## Project Name: awesome-books
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Awesome Books
+
+> This is our first pair-programming project in Module 2.
 
 ## Built With
-- HTML & Javascript
 
-## Deployment
+- HTML
+- CSS
+- Javascript
 
-This project has not been deployed  yet.
+## Live Demo
+
+Visit ...... to view online
 
 ## Getting Started
 
-The goal of this project is to:
--Understand different ways to create objects in JavaScript.
--Create and access properties and methods of JavaScript objects.
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- Web Browser
+- VS Code
+
+### Install
+
+1. Clone the repo or download the repo files
+
+git clone https://github.com/stephnna/awesome-books.git
+
+2. Open folder or zip in VS Code
+
+3. Run the HTML file (index.html) on Browser locally or with Live Server
 
 ## Authors
-👤 Ezea Stephen Nnabuike
-- GitHub: [@stephnna](https://github.com/stephnna)
-- Twitter: [@stephnna](https://twitter.com/stephnna)
-- LinkedIn: [Linkedin](https://www.linkedin.com/in/stephen-nnabuike-ezea-143b97170/)
 
-👤 Rose
-- GitHub: [@Rose]()
-- Twitter: [Rose]()
-- LinkedIn: [Rose](Rose)
+👤 **Rose Okpe**
 
+- GitHub: [@roseokpe](https://github.com/roseokpe)
+- Twitter: 
+- LinkedIn: 
+
+👤 **Stephen**
+
+- GitHub: [@githubhandle]
+- Twitter: [@twitterhandle]
+- LinkedIn: [LinkedIn]
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -40,3 +65,7 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

@@ -1,5 +1,3 @@
-const bookList = document.querySelector('.books');
-const form = document.getElementById('added-book');
 const listMenu = document.querySelector('#list-menu');
 const formMenu = document.querySelector('#form-menu');
 const contactMenu = document.querySelector('#contact-menu');
