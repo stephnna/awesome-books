@@ -8,7 +8,7 @@ function displayBooks(list) {
   const sn = 1;
   list.forEach((item) => {
     tr += `<tr>
-    <td>${sn}</td>
+    <td>` + sn  + `</td>
     <td>` + item.title + `</td>
     <td>` + item.author + `</td>
     <td> <button type = "button" onclick="deleteBook(` + (sn - 1) + `);">Remove</button></td>
@@ -37,14 +37,16 @@ function deleteBook(key) {
     localStorage.setItem('bookdata', JSON.stringify(newData));
     getLocalStorageData();
   }
-} 
-bttn.onclick = function () {
+}
+
+bttn.onclick = function() {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
   const data = JSON.parse(localStorage.getItem('bookdata'));
   if (data != null && data.length > 0) {
     bookList = data;
   }
+
   const data2 = {
     title: title.value,
     author: author.value,
