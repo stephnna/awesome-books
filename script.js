@@ -7,7 +7,7 @@ function displayBooks(list) {
   let tr = '';
   let sn = 1;
   list.forEach((item) => {
-    tr += `<tr>
+    tr = tr + `<tr>
     <td>${sn}</td>
     <td>${item.title}</td>
     <td>` + item.author + `</td>
@@ -17,18 +17,18 @@ function displayBooks(list) {
   });
   document.getElementById('tbody').innerHTML = tr;
 }
-  
+
 function getLocalStorageData() {
   const data = JSON.parse(localStorage.getItem('bookdata'));
   if (data != null && data.length > 0) {
     awesomeBook.style.display = 'block';
     displayBooks(data);
-  } else { 
+  } else {
     awesomeBook.style.display = 'none';
   }
 }
 
-bttn.onclick = function() {
+bttn.onclick = function () {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
   const data = JSON.parse(localStorage.getItem('bookdata'));
@@ -52,11 +52,11 @@ if (localStorage.getItem('bookdata') != null) {
 const deleteBookObj = document.querySelectorAll('.remove-book');
 deleteBookObj.forEach((trigger) => {
   trigger.addEventListener('click', () => {
-    const data = JSON.parse(localStorage.getItem ('bookdata'));
+    const data = JSON.parse(localStorage.getItem('bookdata'));
     if (data != null && data.length > 0) {
-      const key = parseInt(trigger.dataset.bookid);
+      const key = trigger.dataset.bookid;
       const item = data[key];
-      const newData = data.filter((ele) => { return ele !== item; }); 
+      const newData = data.filter(function (ele) { return ele !== item; }); 
       localStorage.setItem('bookdata', JSON.stringify(newData));
       getLocalStorageData();
     }
