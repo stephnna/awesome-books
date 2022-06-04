@@ -8,14 +8,24 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>Awesome Books</h1>
+  <header>
+    <div class="logo"><a href="#Logo">Awesome Books</a></div>
+    <nav class="hamb-menu">
+      <ul class="nav-list">
+        <li class="list"><a id="list-menu" href="#list">Book List</a></li>
+        <li class="list"><a id="form-menu" href="#add-new"> Add New</a></li>
+        <li class="list"><a id="contact-menu" href="#contact"> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="date"></div>
   <section id='awesome-book'>
-    <h2>Book List</h2>
+    <h2>All Awesome Books</h2>
     <table class="book-list">
       <tbody id="tbody"></tbody>
     </table>
   </section>
-  <section >
+  <section id="add-new">
     <hr>
     <h2>Add Book</h2>
     <form id="book-form" method="post">
@@ -26,6 +36,18 @@
       <button type="button" id="bttn">Add</button>
     </form>
   </section>
+  <section id="contact">
+    <h2 class="contact-text">CONTACT INFORMATION</h2>
+    <p class="contact-text">You can reach us on:</p>
+    <ul class="contact-list">
+      <li>contactus@gmail.com</li>
+      <li>+23456677902</li>
+      <li>Lagos, Nigeria</li>
+    </ul>
+  </section>
+  <footer >
+    <h2>Copyright @ Magic Goose Publishers</h2>
+  </footer>
   <script src="./script.js"></script>
 </body>
 </html>
