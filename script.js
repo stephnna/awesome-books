@@ -29,7 +29,7 @@ function getLocalStorageData() {
   }
 }
 
-bttn.onclick = function () {
+bttn.onclick = ()  => {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
   const data = JSON.parse(localStorage.getItem('bookdata'));
@@ -44,6 +44,8 @@ bttn.onclick = function () {
   bookList.push(data2);
   localStorage.setItem('bookdata', JSON.stringify(bookList));
   document.getElementById('book-form').submit();
+  getLocalStorageData();
+  winsow.location.reload(true);
 };
 
 if (localStorage.getItem('bookdata') != null) {
@@ -61,5 +63,6 @@ deleteBookObj.forEach((trigger) => {
       localStorage.setItem('bookdata', JSON.stringify(newData));
       getLocalStorageData();
     }
+    location.reload(true);
   });
 });
