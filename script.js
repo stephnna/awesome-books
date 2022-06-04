@@ -57,7 +57,7 @@ deleteBookObj.forEach((trigger) => {
     if (data != null && data.length > 0) {
       const key = trigger.dataset.bookid;
       const item = data[key];
-      const newData = data.filter(ele => ele !== item);
+      const newData = data.filter(ele => (ele !== item));
       localStorage.setItem('bookdata', JSON.stringify(newData));
       getLocalStorageData();
     }
