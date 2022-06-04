@@ -1,4 +1,5 @@
 class AwesomeBooks {
+
   bookList = [];
   awesomeBook = document.getElementById('awesome-book');
   bttn = document.getElementById('bttn');
@@ -39,10 +40,7 @@ class AwesomeBooks {
       this.bookList = data;
     }
 
-    const data2 = {
-      title: title,
-      author: author,
-    };
+    const data2 = {title, author};
     this.bookList.push(data2);
     localStorage.setItem('bookdata', JSON.stringify(this.bookList));
     document.getElementById('book-form').submit();
@@ -62,9 +60,9 @@ class AwesomeBooks {
   }
 }
 
-let ab = new AwesomeBooks();
+const ab = new AwesomeBooks();
 
-bttn.onclick = () => {
+document.getElementById('bttn').onclick = () => {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
   ab.submitForm(title.value, author.value);
