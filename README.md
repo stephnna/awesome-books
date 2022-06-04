@@ -19,10 +19,10 @@ The goal of this project is to:
 - Twitter: [@stephnna](https://twitter.com/stephnna)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/stephen-nnabuike-ezea-143b97170/)
 
-👤 Rose
-- GitHub: [@Rose]()
-- Twitter: [Rose]()
-- LinkedIn: [Rose](Rose)
+👤 Rose Ofiayan Okpe
+- GitHub: [@Roseokpe]()
+- Twitter: [Roseokpe]()
+- LinkedIn: [Roseokpe](Rose)
 
 
 ## 🤝 Contributing
