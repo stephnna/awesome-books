@@ -5,10 +5,10 @@ awesomeBook.style.display = 'none';
 
 function displayBooks(list) {
   let tr = '';
-  let sn = 1;
+  const sn = 1;
   list.forEach((item) => {
     tr += `<tr>
-    <td> ${sn} </td>
+    <td>${sn}</td>
     <td>` + item.title + `</td>
     <td>` + item.author + `</td>
     <td> <button type = "button" onclick="deleteBook(` + (sn - 1) + `);">Remove</button></td>
@@ -24,11 +24,7 @@ function getLocalStorageData() {
     awesomeBook.style.display = 'block';
     displayBooks(data);
   }
-
-  else {
-    awesomeBook.style.display = 'none';
-  }
-
+  else { awesomeBook.style.display = 'none';}
 }
 
 function deleteBook(key) {

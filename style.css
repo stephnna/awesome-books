@@ -26,7 +26,8 @@ h2 {
   justify-content: space-between;
 }
 
-.book-list th, td {
+.book-list th,
+td {
   padding: 0 8px;
   text-align: left;
 }
