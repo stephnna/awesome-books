@@ -10,8 +10,8 @@ function displayBooks(list) {
     const tr1 = `<tr>
     <td>${sn}</td>
     <td>${item.title}</td>
-    <td>` + item.author + `</td>
-    <td> <button type ="button" class = "remove-book" data-bookId="` + (sn - 1) + `">Remove</button></td>
+    <td>${item.author}</td>
+    <td> <button type ="button" class = "remove-book" data-bookId="${(sn - 1)}">Remove</button></td>
     </tr>`;
     tr += tr1;
     sn += 1;
@@ -57,7 +57,7 @@ deleteBookObj.forEach((trigger) => {
     if (data != null && data.length > 0) {
       const key = trigger.dataset.bookid;
       const item = data[key];
-      const newData = data.filter(ele => (ele !== item));
+      const newData = data.filter((ele) => ele !== item);
       localStorage.setItem('bookdata', JSON.stringify(newData));
       getLocalStorageData();
     }
