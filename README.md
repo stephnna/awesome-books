@@ -20,9 +20,9 @@ The goal of this project is to:
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/stephen-nnabuike-ezea-143b97170/)
 
 👤 Rose Ofiayan Okpe
-- GitHub: [@Roseokpe]()
-- Twitter: [Roseokpe]()
-- LinkedIn: [Roseokpe](Rose)
+- GitHub: [@Roseokpe](https://github.com/roseokpe)
+- Twitter: [@roseokpe]()
+- LinkedIn: [@Roseokpe]()
 
 
 ## 🤝 Contributing
