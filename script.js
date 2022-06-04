@@ -1,6 +1,8 @@
 class AwesomeBooks {
   bookList;
+
   awesomeBook;
+  
   bttn;
 
   constructor() {
@@ -10,7 +12,7 @@ class AwesomeBooks {
     this.bookList = [];
   }
 
-  displayBooks(list) {
+  displayBooks = (list) => {
     let tr = '';
     let sn = 1;
     list.forEach((item) => {
