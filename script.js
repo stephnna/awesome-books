@@ -1,11 +1,13 @@
 class AwesomeBooks {
-
-  bookList = [];
-  awesomeBook = document.getElementById('awesome-book');
-  bttn = document.getElementById('bttn');
+  bookList;
+  awesomeBook;
+  bttn;
 
   constructor() {
+    this.awesomeBook = document.getElementById('awesome-book');
     this.awesomeBook.style.display = 'none';
+    this.bttn = document.getElementById('bttn');
+    this.bookList = [];
   }
 
   displayBooks(list) {
@@ -40,7 +42,7 @@ class AwesomeBooks {
       this.bookList = data;
     }
 
-    const data2 = {title, author};
+    const data2 = { title, author };
     this.bookList.push(data2);
     localStorage.setItem('bookdata', JSON.stringify(this.bookList));
     document.getElementById('book-form').submit();
