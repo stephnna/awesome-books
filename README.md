@@ -1,8 +1,5 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Awesome Books
-
-> This is our first pair-programming project in Module 2.
+## Project Name: awesome-books
+In this milestone of the awesome-book project, We took the Awesome books application and convert it into a fully functional website.
 
 ## Built With
 
@@ -11,19 +8,13 @@
 - Javascript
 
 ## Live Demo
-
-Visit ...... to view online
+![LIVE DEMO](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
 
 - Web Browser
 - VS Code
@@ -38,19 +29,19 @@ git clone https://github.com/stephnna/awesome-books.git
 
 3. Run the HTML file (index.html) on Browser locally or with Live Server
 
+
 ## Authors
-
-👤 **Rose Okpe**
-
-- GitHub: [@roseokpe](https://github.com/roseokpe)
-- Twitter: 
-- LinkedIn: 
 
 👤 **Stephen**
 
 - GitHub: [@githubhandle]
 - Twitter: [@twitterhandle]
 - LinkedIn: [LinkedIn]
+
+👤 Rose  Ofiayan Okpe
+- GitHub: [@Rose](https://github.com/roseokpe)
+- Twitter: [@roseokp](https://twitter.com/roseokpe)
+- LinkedIn: [roseokpe](https://www.linkedin.com/in/rose-o-okpe-0334b5177/)
 
 ## 🤝 Contributing
 
