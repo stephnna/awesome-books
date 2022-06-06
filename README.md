@@ -25,7 +25,7 @@ clone this repo: git clone https://github.com/stephnna/awesome-books.git, cd to 
 👤 Rose  Ofiayan Okpe
 - GitHub: [@Rose](https://github.com/roseokpe)
 - Twitter: [@roseokp](https://twitter.com/roseokpe)
-- LinkedIn: [Rose](https://www.linkedin.com/in/rose-o-okpe-0334b5177/)
+- LinkedIn: [roseokpe](https://www.linkedin.com/in/rose-o-okpe-0334b5177/)
 
 ## 🤝 Contributing
 
