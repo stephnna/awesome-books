@@ -1,0 +1,68 @@
+let bookList = [];
+const awesomeBook = document.getElementById('awesome-book');
+const bttn = document.getElementById('bttn');
+awesomeBook.style.display = 'none';
+
+function displayBooks(list) {
+  let tr = '';
+  let sn = 1;
+  list.forEach((item) => {
+    const tr1 = `<tr>
+    <td>${sn}</td>
+    <td>${item.title}</td>
+    <td>${item.author}</td>
+    <td> <button type ="button" class = "remove-book" data-bookId="${(sn - 1)}">Remove</button></td>
+    </tr>`;
+    tr += tr1;
+    sn += 1;
+  });
+  document.getElementById('tbody').innerHTML = tr;
+}
+
+function getLocalStorageData() {
+  const data = JSON.parse(localStorage.getItem('bookdata'));
+  if (data != null && data.length > 0) {
+    awesomeBook.style.display = 'block';
+    displayBooks(data);
+  } else {
+    awesomeBook.style.display = 'none';
+  }
+}
+
+bttn.onclick = () => {
+  const title = document.getElementById('title');
+  const author = document.getElementById('author');
+  const data = JSON.parse(localStorage.getItem('bookdata'));
+  if (data != null && data.length > 0) {
+    bookList = data;
+  }
+
+  const data2 = {
+    title: title.value,
+    author: author.value,
+  };
+  bookList.push(data2);
+  localStorage.setItem('bookdata', JSON.stringify(bookList));
+  document.getElementById('book-form').submit();
+  getLocalStorageData();
+  window.location.reload(true);
+};
+
+if (localStorage.getItem('bookdata') != null) {
+  getLocalStorageData();
+}
+
+const deleteBookObj = document.querySelectorAll('.remove-book');
+deleteBookObj.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    const data = JSON.parse(localStorage.getItem('bookdata'));
+    if (data != null && data.length > 0) {
+      const key = trigger.dataset.bookid;
+      const item = data[key];
+      const newData = data.filter((ele) => ele !== item);
+      localStorage.setItem('bookdata', JSON.stringify(newData));
+      getLocalStorageData();
+    }
+    window.location.reload(true);
+  });
+});
