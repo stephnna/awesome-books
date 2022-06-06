@@ -5,8 +5,7 @@ In this project, we refactor the Awesome books application to use JavaScript cla
 - HTML, css & Javascript
 
 ## Deployment
-
-This project has not been deployed  yet.
+[Live view](https://stephnna.github.io/awesome-books/)
 
 ## Getting Started
 
