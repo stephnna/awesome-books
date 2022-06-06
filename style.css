@@ -1,5 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Lato&family=Poppins&display=swap');
 
+* {
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  background: #3e3c3c;
+  color: white;
+  height: 52px;
+  font-size: 13px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  padding-left: 10px;
+}
+
+.list a {
+  flex-direction: column;
+  padding-right: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.logo {
+  padding-left: 30px;
+}
+
+.logo a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
 hr {
   width: 20%;
   margin: 30px 40%;
@@ -38,4 +86,45 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.bttn {
+  margin-left: 200%;
+  box-shadow: 3px 3px #000;
+  padding: 5px;
+  font-size: 10px;
+  border: 2px solid #000;
+  font-weight: 700;
+}
+
+#add-new {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+.contact-text {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  line-height: 9vh;
+}
+
+.contact-list {
+  padding-left: 35%;
+}
+
+footer {
+  display: flex;
+  background: #3e3c3c;
+  color: white;
+  height: 52px;
+  font-size: 9px;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 95.5%;
 }

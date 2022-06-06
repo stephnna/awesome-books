@@ -1,26 +1,42 @@
 ## Project Name: awesome-books
-In this project, we refactor the Awesome books application to use JavaScript classes.
+In this milestone of the awesome-book project, We took the Awesome books application and convert it into a fully functional website.
 
 ## Built With
-- HTML, css & Javascript
 
-## Deployment
+- HTML
+- CSS
+- Javascript
 
-This project has not been deployed  yet.
+## Live Demo
+![LIVE DEMO](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Getting Started
 
-The goal of this project is to:
--Understand different ways to create objects in JavaScript.
--Create and access properties and methods of JavaScript objects.
-clone this repo: git clone https://github.com/stephnna/awesome-books.git, cd to the folder, then open the file in the browser.)
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- Web Browser
+- VS Code
+
+### Install
+
+1. Clone the repo or download the repo files
+
+git clone https://github.com/stephnna/awesome-books.git
+
+2. Open folder or zip in VS Code
+
+3. Run the HTML file (index.html) on Browser locally or with Live Server
+
 
 ## Authors
-👤 Ezea Stephen Nnabuike
-- GitHub: [@stephnna](https://github.com/stephnna)
-- Twitter: [@stephnna](https://twitter.com/stephnna)
-- LinkedIn: [Linkedin](https://www.linkedin.com/in/stephen-nnabuike-ezea-143b97170/)
 
+👤 **Stephen**
+
+- GitHub: [@githubhandle]
+- Twitter: [@twitterhandle]
+- LinkedIn: [LinkedIn]
 
 👤 Rose  Ofiayan Okpe
 - GitHub: [@Rose](https://github.com/roseokpe)
@@ -31,8 +47,6 @@ clone this repo: git clone https://github.com/stephnna/awesome-books.git, cd to 
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
@@ -42,3 +56,7 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
